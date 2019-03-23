@@ -1,0 +1,45 @@
+javascript:
+  var sendName = function() {
+    var insertedValue = $('#send_name').val()
+
+    if (insertedValue) {
+      var params = {}
+
+      var endpointParams = '?name=' + insertedValue
+      var endpoint = "#{@endpoint_backend}" + '/' + endpointParams
+      params = $.extend(params, { url: endpoint })
+
+      var handlers = {
+        200: function(response) {
+          $('#result_value').text(response.data)
+        },
+        400: function(jqXHR) {
+          $('#result_value').text(jqXHR.responseJSON.error)
+        },
+        404: function() {
+          var textResult = 'we are experiencing issues :(' +
+                           ' ... please try again later'
+          $('#result_value').text(textResult)
+        },
+        500: function() {
+          var textResult = 'sorry ... something went wrong' +
+                           ', please inform us of what you did'
+          $('#result_value').text(textResult)
+        },
+        503: function() {
+          var textResult = 'we are experiencing issues :(' +
+                           ' ... please try again later'
+          $('#result_value').text(textResult)
+        }
+      }
+      params = $.extend(params, { statusCode: handlers })
+
+      $.ajax(params)
+    } else {
+      var textResult = 'you did not write your name ...'
+      $('#result_value').text(textResult)
+    }
+  }
+  var eraseMessage = function() {
+    $('#result_value').text('')
+  }

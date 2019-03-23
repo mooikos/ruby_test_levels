@@ -1,0 +1,26 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+# debugger
+gem 'pry-byebug', '3.7.0'
+
+# static analyser
+gem 'rubocop', '0.66.0'
+
+# test framework
+gem 'rspec', '3.8.0'
+# for integration
+gem 'rack-test', '1.1.0'
+
+# network mocks
+gem 'webmock', '3.5.1'
+
+# test coverage
+gem 'simplecov', '0.16.1', require: false
+
+# framework
+gem 'sinatra', '2.0.5'
+
+# rest client
+gem 'rest-client', '2.0.2'

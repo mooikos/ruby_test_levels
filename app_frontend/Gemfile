@@ -1,0 +1,17 @@
+# frozen_string_literal: true
+
+source 'https://rubygems.org'
+
+# debugger
+gem 'pry-byebug', '3.7.0'
+
+# static analyser
+gem 'rubocop', '0.66.0'
+
+# test framework
+gem 'rspec', '3.8.0'
+# for integration
+gem 'selenium-webdriver', '3.141.0'
+
+# framework
+gem 'sinatra', '2.0.5'

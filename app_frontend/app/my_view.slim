@@ -1,0 +1,11 @@
+script src='http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'
+== slim :'partials/ajax_root'
+
+body
+  div#result_label tell me your name
+  br
+  input#send_name oninput='eraseMessage()'
+  button onclick='sendName()' send
+  br
+  br
+  div#result_value

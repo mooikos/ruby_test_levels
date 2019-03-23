@@ -1,0 +1,12 @@
+{
+  "name": "mock-app-backend",
+  "version": "1.0.0",
+  "main": "./mock-app-backend/main.js",
+  "license": "MIT",
+  "dependencies": {
+    "mockserver": "~x"
+  },
+  "scripts": {
+    "backend-mockserver": "node ./app/__mockserver__/mockserver.js"
+  }
+}
