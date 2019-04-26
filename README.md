@@ -20,15 +20,13 @@ have different micro apps tested on different levels (unit, integration, system,
     * ruby app_frontend.rb
     * http://localhost:8080
     * start mock server of the backend
-      *
+      * yarn backend-mockserver
   * backend (inside his folder)
     * ruby app_backend.rb
     * http://localhost:3000/?name=my%20name
   * dependency backend (inside his folder)
     * ruby app_dependency.rb
     * http://localhost:3001
-  * mock of backend (for frontend)
-    * yarn backend-mockserver
 * run tests
   * bundle exec rspec
 * see code coverage (in browser)

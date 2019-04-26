@@ -35,7 +35,7 @@ describe 'GET /' do
   end
 
   context 'when "name" parameter is correct' do
-    # this scenario requires services manipulation
+    # NOTE: this scenario requires app_dependency NOT active
     context 'when the dependency is under heavy load' do
       it 'returns a result' do
         get '/?name=enough'
@@ -47,18 +47,19 @@ describe 'GET /' do
           'data' => 'hello enough'
         )
       end
+    end
 
-      context 'when the dependency answers' do
-        it 'returns a result' do
-          get '/?name=enough'
+    # NOTE: this scenario requires app_dependency active
+    context 'when the dependency answers' do
+      it 'returns a result' do
+        get '/?name=enough'
 
-          expect(last_response.status).to be 200
+        expect(last_response.status).to be 200
 
-          parsed_body = JSON.parse(last_response.body)
-          expect(parsed_body).to eql(
-            'data' => 'hello enough' + ' ' + 'it is nice to see you'
-          )
-        end
+        parsed_body = JSON.parse(last_response.body)
+        expect(parsed_body).to eql(
+          'data' => 'hello enough' + ' ' + 'it is nice to see you'
+        )
       end
     end
   end
