@@ -3,3 +3,6 @@
 
 # build for mock of app-backend of frontend
 /app_frontend/node_modules
+
+# downloaded drivers
+bin/

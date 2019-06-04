@@ -3,6 +3,9 @@ require 'pry-byebug'
 
 # browser automation library
 require 'selenium-webdriver'
+# allow automatic installation of drivers
+require 'webdrivers'
+Webdrivers.install_dir = './bin'
 
 RSpec.configure do |config|
   ##### default options

@@ -12,6 +12,8 @@ gem 'rubocop', '0.66.0'
 gem 'rspec', '3.8.0'
 # for integration
 gem 'selenium-webdriver', '3.141.0'
+# installer of the drivers
+gem 'webdrivers', '3.8.0'
 
 # framework
 gem 'sinatra', '2.0.5'
