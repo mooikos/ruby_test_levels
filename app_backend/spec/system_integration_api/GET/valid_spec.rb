@@ -17,6 +17,7 @@ describe 'GET /' do
       expect(parsed_body).to eql(
         'error' => 'missing "name" parameter'
       )
+      binding.pry
     end
   end
 
@@ -31,6 +32,7 @@ describe 'GET /' do
         'error' => 'the "name" parameter is too short' \
                    ', expected length of "5" found "4"'
       )
+      binding.pry
     end
   end
 
@@ -46,6 +48,7 @@ describe 'GET /' do
         expect(parsed_body).to eql(
           'data' => 'hello enough'
         )
+        binding.pry
       end
     end
 
@@ -60,6 +63,7 @@ describe 'GET /' do
         expect(parsed_body).to eql(
           'data' => 'hello enough' + ' ' + 'it is nice to see you'
         )
+        binding.pry
       end
     end
   end

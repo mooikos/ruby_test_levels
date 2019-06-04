@@ -19,9 +19,9 @@ describe 'integration of MyControl and MyModel' do
       end
 
       it 'returns a success' do
-        expect(
-          MyController.new.control(params: params)
-        ).to eql(expected_result)
+        expect(MyController.new.control(params: params))
+          .to eql(expected_result)
+        binding.pry
       end
     end
   end

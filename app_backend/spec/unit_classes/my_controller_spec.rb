@@ -19,6 +19,7 @@ describe MyController do
 
       it 'returns a error' do
         expect(subject).to eql(expected_result)
+        binding.pry
       end
     end
 
@@ -37,6 +38,7 @@ describe MyController do
 
       it 'returns a error' do
         expect(subject).to eql(expected_result)
+        binding.pry
       end
     end
 
@@ -58,6 +60,7 @@ describe MyController do
 
       it 'returns a success' do
         expect(subject).to eql(expected_result)
+        binding.pry
       end
     end
   end

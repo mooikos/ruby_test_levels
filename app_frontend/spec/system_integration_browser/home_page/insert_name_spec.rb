@@ -21,5 +21,6 @@ describe 'insert name from home page' do
     expect(label_result.text).to eql(
       'hello the name it is nice to see you'
     )
+    binding.pry
   end
 end

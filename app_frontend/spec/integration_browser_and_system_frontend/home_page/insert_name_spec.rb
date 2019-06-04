@@ -28,5 +28,6 @@ describe 'insert name from home page' do
     logs_network.assert_contains_log(
       expected_log: { 'name' => 'the name' }
     )
+    binding.pry
   end
 end
