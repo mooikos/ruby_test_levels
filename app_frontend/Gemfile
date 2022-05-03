@@ -16,4 +16,4 @@ gem 'selenium-webdriver', '3.141.0'
 gem 'webdrivers', '3.8.0'
 
 # framework
-gem 'sinatra', '2.0.5'
+gem 'sinatra', '2.2.0'
