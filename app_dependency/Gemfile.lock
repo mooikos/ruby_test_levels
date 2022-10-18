@@ -6,7 +6,8 @@ GEM
     coderay (1.1.2)
     jaro_winkler (1.5.2)
     method_source (0.9.2)
-    mustermann (1.0.3)
+    mustermann (1.1.2)
+      ruby2_keywords (~> 0.0.1)
     parallel (1.15.0)
     parser (2.6.2.0)
       ast (~> 2.4.0)
@@ -17,8 +18,8 @@ GEM
       byebug (~> 11.0)
       pry (~> 0.10)
     psych (3.1.0)
-    rack (2.0.6)
-    rack-protection (2.0.5)
+    rack (2.2.4)
+    rack-protection (2.2.0)
       rack
     rainbow (3.0.0)
     rubocop (0.66.0)
@@ -30,12 +31,13 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 1.6)
     ruby-progressbar (1.10.0)
-    sinatra (2.0.5)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
-    tilt (2.0.9)
+    tilt (2.0.11)
     unicode-display_width (1.5.0)
 
 PLATFORMS
@@ -44,7 +46,7 @@ PLATFORMS
 DEPENDENCIES
   pry-byebug (= 3.7.0)
   rubocop (= 0.66.0)
-  sinatra (= 2.0.5)
+  sinatra (= 2.2.0)
 
 BUNDLED WITH
    1.16.6
