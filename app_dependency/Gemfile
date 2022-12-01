@@ -9,4 +9,4 @@ gem 'pry-byebug', '3.7.0'
 gem 'rubocop', '0.66.0'
 
 # framework
-gem 'sinatra', '2.0.5'
+gem 'sinatra', '2.2.3'
